@@ -554,22 +554,19 @@
 }
 
 .slider-controls button {
-    background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    color: white;
+    color: black;
     font-size: 20px;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     transition: background 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
 }
 
 .slider-controls button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
 }
 
 @keyframes fadeInUp {
