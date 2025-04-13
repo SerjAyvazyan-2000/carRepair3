@@ -95,3 +95,16 @@ document.querySelectorAll('.home-link ').forEach(link => {
         }
     });
 });
+
+let currentSlide = 0;
+const slider = document.getElementById('slider');
+const totalSlides = slider.children.length;
+
+function moveSlide(direction) {
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+setInterval(() => {
+    moveSlide(1);
+}, 5000);

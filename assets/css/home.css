@@ -462,6 +462,116 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+
+.partners {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.partners__title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1c1c1c;
+}
+
+.partners__subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.partners__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.partner img {
+    max-width: 100%;
+    height: auto;
+    max-height: 60px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.partner img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+
+
+.slider-section {
+    background-color: #222;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    background: linear-gradient(135deg, #333, #444);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.slide h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f3c623;
+}
+
+.slide p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.slider-controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-controls button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;

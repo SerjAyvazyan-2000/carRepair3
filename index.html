@@ -49,6 +49,9 @@
                         <li><a class="home-link" href="#contact">Fale Conosco</a></li>
                         <li><a class="home-link" href="#faq">Perguntas Frequentes</a></li>
                         <li><a class="home-link" href="#about">Sobre nós</a></li>
+                        <li><a class="home-link" href="#partners">Parceiros</a></li>
+
+
                     </ul>
 
                 </nav>
@@ -112,6 +115,8 @@
             </div>
         </section>
 
+
+
         <section id="about" class="about-section">
             <div class="container">
                 <div class="about-content">
@@ -140,40 +145,58 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section id="partners" class="partners">
             <div class="container">
-                <h2>Entre em Contacto</h2>
-                <p class="subtitle">Tem alguma dúvida? Fale connosco, teremos o maior prazer em ajudar!</p>
+                <h2 class="partners__title">Nossos Parceiros</h2>
+                <p class="partners__subtitle">Trabalhamos com marcas confiáveis para oferecer o melhor serviço.</p>
 
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Informações de Contacto</h3>
-                        <p><strong>Endereço:</strong> Rua das Oficinas 123, Lisboa, Portugal</p>
-                        <p><strong>Telefone:</strong> <a href="tel:+351912345678">+351 912 345 678</a></p>
-                        <p><strong>Email:</strong> <a
-                                href="mailto:contacto@ptreparacao.com">contacto@ptreparacao.com</a></p>
-                        <p><strong>Horário:</strong> Segunda a Sábado, 9h - 18h</p>
-                        <p><strong>Redes sociais:</strong></p>
-                        <p>
-                            <a target="_blank" href="https://www.facebook.com/?locale=ru_RU">Facebook</a> |
-                            <a target="_blank" href="https://www.instagram.com/">Instagram</a> |
-                            <a target="_blank" href="https://www.whatsapp.com/">WhatsApp</a>
-                        </p>
+                <div class="partners__grid">
+                    <div class="partner">
+                        <img src="assets/images/bosh.jpg" alt="Bosch" />
                     </div>
+                    <div class="partner">
+                        <img src="assets/images/partners2.jpg" alt="Michelin" />
+                    </div>
+                    <div class="partner">
+                        <img src="assets/images/partners3.jpg" alt="Castrol" />
+                    </div>
+                    <div class="partner">
+                        <img src="assets/images/partners4.jpg" alt="Mobil" />
+                    </div>
+                    <div class="partner">
+                        <img src="assets/images/partners5.jpg" alt="Shell" />
+                    </div>
+                    <div class="partner">
+                        <img src="assets/images/partners6.jpg" alt="Goodyear" />
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <form class="contact-form">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        <section class="slider-section">
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <h3>Experiência de mais de 10 anos</h3>
+                        <p>Somos especialistas em manutenção automotiva com mais de uma década de confiança.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Técnicos Certificados</h3>
+                        <p>Nossa equipe é altamente qualificada para cuidar do seu carro com profissionalismo.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Peças Originais</h3>
+                        <p>Trabalhamos apenas com peças de qualidade e fornecedores de confiança.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Oferecemos um atendimento amigável e sob medida para cada cliente.</p>
+                    </div>
+                </div>
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Seu email" required>
-
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva a sua mensagem..."
-                                  required></textarea>
-
-                        <button type="submit">Enviar Mensagem</button>
-                    </form>
+                <div class="slider-controls">
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
                 </div>
             </div>
         </section>
@@ -287,6 +310,46 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Entre em Contacto</h2>
+                <p class="subtitle">Tem alguma dúvida? Fale connosco, teremos o maior prazer em ajudar!</p>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informações de Contacto</h3>
+                        <p><strong>Endereço:</strong> Rua das Oficinas 123, Lisboa, Portugal</p>
+                        <p><strong>Telefone:</strong> <a href="tel:+351912345678">+351 912 345 678</a></p>
+                        <p><strong>Email:</strong> <a
+                                href="mailto:contacto@ptreparacao.com">contacto@ptreparacao.com</a></p>
+                        <p><strong>Horário:</strong> Segunda a Sábado, 9h - 18h</p>
+                        <p><strong>Redes sociais:</strong></p>
+                        <p>
+                            <a target="_blank" href="https://www.facebook.com/?locale=ru_RU">Facebook</a> |
+                            <a target="_blank" href="https://www.instagram.com/">Instagram</a> |
+                            <a target="_blank" href="https://www.whatsapp.com/">WhatsApp</a>
+                        </p>
+                    </div>
+
+                    <form class="contact-form">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva a sua mensagem..."
+                                  required></textarea>
+
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer">
